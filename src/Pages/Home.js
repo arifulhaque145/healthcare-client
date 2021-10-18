@@ -1,19 +1,17 @@
 import React from "react";
 import Banner from "../Components/Banner";
+import Covid from "../Components/Covid";
 import Feedback from "../Components/Feedback";
-import Footer from "../Components/Footer";
-import Navs from "../Components/Navs";
 import ServiceContainer from "../Components/ServiceContainer";
 
 function Home() {
   // page
   return (
-    <div>
-      <Navs />
+    <div id="home">
       <Banner />
       <ServiceContainer />
+      <Covid />
       <Feedback />
-      <Footer />
     </div>
   );
 }
