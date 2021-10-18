@@ -14,9 +14,11 @@ function Service({ data }) {
         eveniet harum sunt modi quibusdam assumenda, unde aspernatur ratione
         voluptates.
       </p>
-      <button className="bg-blue-500 my-3 px-8 py-2 text-white hover:bg-white hover:text-black hover:shadow-lg">
-        <Link to="/details">Details</Link>
-      </button>
+      <Link to="/details">
+        <button className="bg-blue-500 my-3 px-8 py-2 text-white shadow-md hover:bg-white hover:text-black hover:shadow-lg">
+          Details
+        </button>
+      </Link>
     </div>
   );
 }

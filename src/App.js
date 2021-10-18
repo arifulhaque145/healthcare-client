@@ -39,8 +39,8 @@ function App() {
             <NotFound />
           </Route>
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </AuthProvider>
   );
 }

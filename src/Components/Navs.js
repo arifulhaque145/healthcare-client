@@ -15,14 +15,19 @@ function Navs() {
   const { user, logOut } = useAuth().allContext;
 
   return (
-    <div id="header" className="w-full z-30 py-1 bg-white shadow-lg sticky top-0">
+    <div
+      id="header"
+      className="w-full z-30 py-1 bg-white shadow-lg sticky top-0"
+    >
       <div className="w-full mt-0 px-6 py-2 flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl flex items-center">
-            <img src={logo} alt="" width="35" className="mr-3" /> Life Care
-            Centre
-          </h1>
-        </div>
+        <NavHashLink to="/#home">
+          <div>
+            <h1 className="text-2xl flex items-center">
+              <img src={logo} alt="" width="35" className="mr-3" /> Life Care
+              Centre
+            </h1>
+          </div>
+        </NavHashLink>
         <div className="flex items-center">
           <label
             htmlFor="menu-toggle"
@@ -64,12 +69,12 @@ function Navs() {
                   </NavHashLink>
                 </li>
                 <li>
-                  <Item
-                    to="/"
+                  <NavHashLink
+                    to="/#covid"
                     className="inline-block no-underline text-gray-500 hover:text-black font-medium text-md py-2 px-4 lg:-ml-2"
                   >
                     Covid
-                  </Item>
+                  </NavHashLink>
                 </li>
                 <li>
                   <NavHashLink
@@ -81,50 +86,50 @@ function Navs() {
                 </li>
               </ul>
             </nav>
-          </div>
-          <div
-            className="order-2 md:order-3 flex flex-wrap items-center justify-end mr-0 md:mr-4"
-            id="nav-content"
-          >
-            <div className="auth flex items-center w-full md:w-full">
-              {!user.displayName ? (
-                <Link to="/login">
+            <div
+              className="order-2 md:order-3 flex flex-wrap items-center justify-end mr-0 md:mr-4"
+              id="nav-content"
+            >
+              <div className="auth flex items-center w-full md:w-full">
+                {!user.displayName ? (
+                  <Link to="/login">
+                    <button
+                      type="button"
+                      className="border border-blue-500 hover:bg-white text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-blue-500 bg-blue-600 focus:outline-none focus:shadow-outline"
+                    >
+                      Login
+                    </button>
+                  </Link>
+                ) : (
+                  <li className="list-none mr-2.5">
+                    <img
+                      src={userImg}
+                      alt=""
+                      width="30"
+                      className="inline-block rounded-full mx-2"
+                    />{" "}
+                    {user.displayName}
+                  </li>
+                )}
+                {!user.displayName ? (
+                  <Link to="/register">
+                    <button
+                      type="button"
+                      className="border border-green-500 text-green-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-green-600 focus:outline-none focus:shadow-outline"
+                    >
+                      Register
+                    </button>
+                  </Link>
+                ) : (
                   <button
                     type="button"
-                    className="border border-blue-500 hover:bg-white text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-blue-500 bg-blue-600 focus:outline-none focus:shadow-outline"
+                    className="border border-red-500 text-red-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-red-600 focus:outline-none focus:shadow-outline"
+                    onClick={logOut}
                   >
-                    Login
+                    Logout
                   </button>
-                </Link>
-              ) : (
-                <li className="list-none mr-2.5">
-                  <img
-                    src={userImg}
-                    alt=""
-                    width="30"
-                    className="inline-block rounded-full mx-2"
-                  />{" "}
-                  {user.displayName}
-                </li>
-              )}
-              {!user.displayName ? (
-                <Link to="/register">
-                  <button
-                    type="button"
-                    className="border border-green-500 text-green-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-green-600 focus:outline-none focus:shadow-outline"
-                  >
-                    Register
-                  </button>
-                </Link>
-              ) : (
-                <button
-                  type="button"
-                  className="border border-red-500 text-red-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-red-600 focus:outline-none focus:shadow-outline"
-                  onClick={logOut}
-                >
-                  Logout
-                </button>
-              )}
+                )}
+              </div>
             </div>
           </div>
         </div>

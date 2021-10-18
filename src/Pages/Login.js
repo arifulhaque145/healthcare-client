@@ -9,31 +9,23 @@ function Login() {
     <div className="flex justify-center py-20">
       <div className="flex flex-col w-96 p-10 shadow-lg">
         <form>
+          <h1 className="text-sm font-medium text-gray-900 block mb-8 text-2xl text-center uppercase">
+            Login
+          </h1>
           <div className="mb-6">
-            <label
-              htmlFor="email"
-              className="text-sm font-medium text-gray-900 block mb-2"
-            >
-              Your email
-            </label>
             <input
               type="email"
               id="email"
               className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              placeholder="name@flowbite.com"
+              placeholder="Email"
               required=""
             />
           </div>
           <div className="mb-6">
-            <label
-              htmlFor="password"
-              className="text-sm font-medium text-gray-900 block mb-2"
-            >
-              Your password
-            </label>
             <input
               type="password"
               id="password"
+              placeholder="Password"
               className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
               required=""
             />

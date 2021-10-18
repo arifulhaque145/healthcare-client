@@ -23,7 +23,7 @@ function ServiceContainer() {
         <Service data={voi} />
       </div>
       <div className="flex my-10">
-        <button className="bg-red-900 w-50 mx-auto px-5 py-2 my-5 mb-16 text-white shadow-lg">
+        <button className="bg-red-900 w-50 mx-auto px-5 py-2 my-5 mb-16 text-white shadow-lg hover:bg-white hover:text-black">
           <Link to="/allservices">Checkout Our Services</Link>
         </button>
       </div>
