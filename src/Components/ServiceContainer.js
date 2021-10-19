@@ -12,18 +12,18 @@ const voi = {
 function ServiceContainer() {
   // compo
   return (
-    <div id="services">
-      <div className="heading text-center font-light upper uppercase text-4xl mt-20 mb-14 tracking-widest">
+    <div id="services" className="lg:p-20 p-5">
+      <div className="heading text-center font-light upper uppercase text-4xl lg:mb-20 mb-10 tracking-widest">
         Services
       </div>
-      <div className="holder mx-auto w-10/12 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-32 justify-items-center">
+      <div className="grid gap-8 lg:grid-cols-4 sm:max-w-sm sm:mx-auto lg:max-w-full">
         <Service data={voi} />
         <Service data={voi} />
         <Service data={voi} />
         <Service data={voi} />
       </div>
       <div className="flex my-10">
-        <button className="bg-red-900 w-50 mx-auto px-5 py-2 my-5 mb-16 text-white shadow-lg hover:bg-white hover:text-black">
+        <button className="bg-red-900 w-50 mx-auto px-5 py-2 lg:mt-10 text-white shadow-lg hover:bg-white hover:text-black">
           <Link to="/allservices">Checkout Our Services</Link>
         </button>
       </div>
