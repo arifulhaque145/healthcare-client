@@ -28,20 +28,26 @@ const useFirebase = () => {
         upadateName(name);
         setUser(user);
       })
+      .catch((error) => {
+        console.log(error.message);
+      })
       .finally(() => setIsLoading(false));
   };
 
   const upadateName = (name) => {
     updateProfile(auth.currentUser, {
       displayName: name,
-    }).finally(() => setIsLoading(false));
+    })
+      .catch((error) => {
+        console.log(error.message);
+      })
+      .finally(() => setIsLoading(false));
   };
 
   const logIn = (email, password) => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user);
         setUser(user);
       })
       .catch((error) => {
@@ -57,6 +63,9 @@ const useFirebase = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
+      })
+      .catch((error) => {
+        console.log(error.message);
       })
       .finally(() => setIsLoading(false));
   };

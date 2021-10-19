@@ -14,12 +14,12 @@ function Banner() {
   // const bannerImg = "https://i.ibb.co/mb2jHt9/banner.jpg";
   return (
     <BannerContainer className="flex flex-col justify-center items-start">
-      <div class="flex flex-col lg:max-w-2xl sm:mx-auto sm:flex-row">
+      <div className="flex flex-col lg:max-w-2xl sm:mx-auto sm:flex-row">
         <div className="lg:ml-32 p-5 lg:p-0">
-          <h6 class="mb-4 text-2xl lg:text-3xl font-bold leading-5 uppercase">
+          <h6 className="mb-4 text-2xl lg:text-3xl font-bold leading-5 uppercase">
             We are here to help you
           </h6>
-          <p class="mb-4 lg:mb-0 text-sm text-md lg:text-lg text-gray-900 text-justify">
+          <p className="mb-4 lg:mb-0 text-sm text-md lg:text-lg text-gray-900 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
             pariatur veniam explicabo alias sed expedita vel soluta quibusdam
             deleniti odio. Optio fugit nesciunt quisquam voluptate.

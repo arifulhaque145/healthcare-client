@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import useFirebase from "../Hooks/useFirebase";
-
-// page
 
 function Login() {
   const { signInUsingGoogle } = useFirebase();
@@ -11,10 +9,12 @@ function Login() {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
 
-  // const emailLogin = (email, pass) => {
-  //   console.log(email, pass);
-  // };
+  const history = useHistory();
 
+  const nowLogIn = () => {
+    logIn(email, password);
+    history.push("/home");
+  };
   return (
     <div className="flex justify-center py-20">
       <div className="flex flex-col w-96 p-10 shadow-lg">
@@ -45,7 +45,7 @@ function Login() {
         <Link to="/">
           <button
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-            onClick={() => logIn(email, password)}
+            onClick={nowLogIn}
           >
             Login
           </button>

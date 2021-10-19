@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import useFirebase from "../Hooks/useFirebase";
 
 function Register() {
@@ -13,6 +13,8 @@ function Register() {
   const [password, setpassword] = useState("");
   const [cpassword, setcpassword] = useState("");
 
+  const history = useHistory();
+
   const signIn = (e) => {
     e.preventDefault();
 
@@ -25,6 +27,7 @@ function Register() {
       return;
     }
     createAccount(name, email, password);
+    history.push("/home");
   };
   // page
   return (
