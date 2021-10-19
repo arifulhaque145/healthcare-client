@@ -11,6 +11,11 @@ function Login() {
 
   const history = useHistory();
 
+  const googleLogIn = () => {
+    signInUsingGoogle();
+    history.push("/home");
+  }
+
   const nowLogIn = () => {
     logIn(email, password);
     history.push("/home");
@@ -68,7 +73,7 @@ function Login() {
             </span>
             <span className="bg-gray-300 h-px flex-grow t-2 relative top-2"></span>
           </div>
-          <div className="p-2 cursor-pointer" onClick={signInUsingGoogle}>
+          <div className="p-2 cursor-pointer" onClick={googleLogIn}>
             <div className="inline-flex items-center bg-white leading-none text-purple-600 rounded-full p-2 shadow text-sm">
               <span className="inline-flex bg-purple-600 text-white rounded-full p-3 justify-center items-center text-">
                 <i className="fab fa-google"></i>
