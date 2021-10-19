@@ -2,7 +2,7 @@ import React from "react";
 
 function FeedbackItem({ data }) {
   return (
-    <div className="border p-4 flex flex-col max-w-md sm:mx-auto sm:flex-row">
+    <div className="border p-4 flex flex-col max-w-md lg:mx-auto lg:flex-row">
       <div className="mr-4">
         <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-indigo-50">
           <img

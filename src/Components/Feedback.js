@@ -15,11 +15,13 @@ function Feedback() {
       <div className="heading text-center font-light upper uppercase text-2xl lg:text-4xl lg:mb-24 my-10 tracking-widest">
         Patient Feedbacks
       </div>
-      <div className="grid gap-4 lg:row-gap-5 lg:grid-cols-2 m-5">
+      <div className="grid grid-cols-1 lg:gap-4 lg:row-gap-5 lg:grid-cols-2 lg:m-5">
         <FeedbackItem data={voi} />
         <FeedbackItem data={voi} />
         <FeedbackItem data={voi} />
         <FeedbackItem data={voi} />
+        <FeedbackItem data={voi} /> 
+        <FeedbackItem data={voi} /> 
       </div>
     </div>
   );
