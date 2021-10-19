@@ -1,5 +1,5 @@
 import React from "react";
-import Service from "./Service";
+import FeedbackItem from "./FeedbackItem";
 
 const voi = {
   key: 1,
@@ -11,15 +11,15 @@ const voi = {
 function Feedback() {
   // compo
   return (
-    <div id="feedback" className="mb-20">
-      <div className="heading text-center font-light upper uppercase text-4xl mt-20 mb-14 tracking-widest">
+    <div id="feedback" className="lg:p-14">
+      <div className="heading text-center font-light upper uppercase text-2xl lg:text-4xl lg:mb-24 my-10 tracking-widest">
         Patient Feedbacks
       </div>
-      <div className="holder mx-auto w-10/12 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-32 justify-items-center">
-        <Service data={voi} />
-        <Service data={voi} />
-        <Service data={voi} />
-        <Service data={voi} />
+      <div className="grid gap-4 lg:row-gap-5 lg:grid-cols-2 m-5">
+        <FeedbackItem data={voi} />
+        <FeedbackItem data={voi} />
+        <FeedbackItem data={voi} />
+        <FeedbackItem data={voi} />
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
-import styled from "styled-components";
 import useAuth from "../Hooks/useAuth";
 
 function Navs() {
@@ -9,8 +8,7 @@ function Navs() {
   const logo =
     "https://www.nicepng.com/png/full/120-1204201_health-png-health-care-logo-png.png";
 
-  const userImg =
-    "https://thumbs.dreamstime.com/b/default-avatar-profile-flat-icon-social-media-user-vector-portrait-unknown-human-image-default-avatar-profile-flat-icon-184330869.jpg";
+  const userImg = "https://i.ibb.co/Tr4GWzq/avatar.jpg";
 
   const { user, logOut } = useAuth().allContext;
 
@@ -20,7 +18,7 @@ function Navs() {
       className="w-full z-30 py-1 bg-white shadow-lg sticky top-0"
     >
       <div className="w-full mt-0 px-6 py-2 flex items-center justify-between">
-        <NavHashLink to="/#home">
+        <NavHashLink to="/">
           <div>
             <h1 className="text-2xl flex items-center">
               <img src={logo} alt="" width="35" className="mr-3" /> Life Care
@@ -139,12 +137,3 @@ function Navs() {
 }
 
 export default Navs;
-
-///////////////////////////// Styles /////////////////////////////
-
-const Item = styled(Link)`
-  cursor: pointer;
-  user-select: none;
-  margin: 0 10px 0 10px;
-  list-style-type: none;
-`;
