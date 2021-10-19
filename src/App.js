@@ -4,6 +4,7 @@ import AuthProvider from "./Components/AuthProvider";
 import Footer from "./Components/Footer";
 import Navs from "./Components/Navs";
 import PrivateRoute from "./Components/PrivateRoute";
+import useFirebase from "./Hooks/useFirebase";
 import AllServices from "./Pages/AllServices";
 import Details from "./Pages/Details";
 import Home from "./Pages/Home";
@@ -12,6 +13,8 @@ import NotFound from "./Pages/NotFound";
 import Register from "./Pages/Register";
 
 function App() {
+  const { user } = useFirebase();
+
   return (
     <AuthProvider>
       <Router>
@@ -20,12 +23,16 @@ function App() {
           <PrivateRoute path="/allservices">
             <AllServices />
           </PrivateRoute>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/register">
-            <Register />
-          </Route>
+          {!user.displayName && (
+            <Route path="/login">
+              <Login />
+            </Route>
+          )}
+          {!user.displayName && (
+            <Route path="/register">
+              <Register />
+            </Route>
+          )}
           <PrivateRoute path="/details">
             <Details />
           </PrivateRoute>
