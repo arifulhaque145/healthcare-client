@@ -32,13 +32,6 @@ const newUsers = [
   },
   {
     key: 5,
-    name: "Abraham North",
-    imgUrl:
-      "https://mumbaiwebsitedevelopers.in/wp-content/uploads/2021/07/divrr.jpg",
-    catagory: "therapy",
-  },
-  {
-    key: 6,
     name: "Graham Walt",
     imgUrl:
       "https://bsmedia.business-standard.com/_media/bs/img/article/2018-11/21/full/1542791990-3278.jpg",
