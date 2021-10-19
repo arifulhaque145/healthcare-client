@@ -2,7 +2,7 @@
 
 This website is created for medical health. [Life Care Centre](https://life-care-centre.web.app/).
 
-## Available Feature
+## Available Features
 
 There are some freatures in this project and some are pending. available features are given.
 
