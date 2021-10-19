@@ -5,7 +5,6 @@ import Feedback from "../Components/Feedback";
 import ServiceContainer from "../Components/ServiceContainer";
 
 function Home() {
-  // page
   return (
     <div id="home">
       <Banner />

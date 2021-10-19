@@ -76,15 +76,13 @@ function Register() {
             />
             <small className="text-red-500">{perror}</small>
           </div>
-          <Link to="/">
-            <button
-              type="submit"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-              onClick={signIn}
-            >
-              Register
-            </button>
-          </Link>
+          <button
+            type="submit"
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            onClick={signIn}
+          >
+            Register
+          </button>
           <div className="flex justify-center my-6">
             <div className="text-sm">
               <label htmlFor="remember" className="font-medium text-gray-900">

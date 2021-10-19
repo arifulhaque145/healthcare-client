@@ -20,7 +20,7 @@ function Navs() {
       <div className="w-full mt-0 px-6 py-2 flex items-center justify-between">
         <NavHashLink to="/">
           <div>
-            <h1 className="text-2xl flex items-center">
+            <h1 className="text-2xl font-bold flex items-center">
               <img src={logo} alt="" width="35" className="mr-3" /> Life Care
               Centre
             </h1>
@@ -99,7 +99,7 @@ function Navs() {
                     </button>
                   </Link>
                 ) : (
-                  <li className="list-none mr-2.5">
+                  <li className="list-none cursor-pointer select-none mr-2.5">
                     <img
                       src={userImg}
                       alt=""
