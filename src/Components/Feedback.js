@@ -34,7 +34,7 @@ const newUsers = [
     key: 5,
     name: "Abraham North",
     imgUrl:
-      "https://thumbs.dreamstime.com/b/mature-businessperson-portrait-formalwear-business-success-successful-man-businesslike-suit-male-formal-fashion-professional-220802535.jpg",
+      "https://mumbaiwebsitedevelopers.in/wp-content/uploads/2021/07/divrr.jpg",
     catagory: "therapy",
   },
   {
