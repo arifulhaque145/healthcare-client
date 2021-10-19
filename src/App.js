@@ -33,7 +33,7 @@ function App() {
               <Register />
             </Route>
           )}
-          <PrivateRoute path="/details">
+          <PrivateRoute path="/details/:id">
             <Details />
           </PrivateRoute>
           <Route path="/home">

@@ -60,7 +60,7 @@ function Navs() {
                 </li>
                 <li>
                   <NavHashLink
-                    to="/#services"
+                    to="/allservices"
                     className="inline-block no-underline text-gray-500 hover:text-black font-medium text-md py-2 px-4 lg:-ml-2"
                   >
                     Services

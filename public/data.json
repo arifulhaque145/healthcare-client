@@ -1,98 +1,182 @@
 [
   {
     "key": 1,
-    "name": "heart sergury",
+    "name": "abortive therapy",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "therapy",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Offers" },
+      { "key": 3, "subtitle": "Qualities" },
+      { "key": 4, "subtitle": "Team" }
+    ],
+    "right": [
+      { "key": 1, "subtitle": "Services" },
+      { "key": 2, "subtitle": "Jobs" }
+    ]
   },
   {
     "key": 2,
-    "name": "heart sergury",
+    "name": "heat therapy",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "therapy",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Offers" }
+    ],
+    "right": [{ "key": 1, "subtitle": "Services" }]
   },
   {
     "key": 3,
-    "name": "heart sergury",
+    "name": "hormone therapy",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "therapy",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Offers" },
+      { "key": 3, "subtitle": "Qualities" }
+    ],
+    "right": [
+      { "key": 1, "subtitle": "Services" },
+      { "key": 2, "subtitle": "Jobs" }
+    ]
   },
   {
     "key": 4,
-    "name": "heart sergury",
+    "name": "Chemotherapy",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "therapy",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Offers" },
+      { "key": 3, "subtitle": "Qualities" }
+    ],
+    "right": [{ "key": 1, "subtitle": "Jobs" }]
   },
   {
     "key": 5,
-    "name": "heart sergury",
+    "name": "Appendectomy",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "sergury",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Offers" },
+      { "key": 3, "subtitle": "Qualities" }
+    ],
+    "right": [{ "key": 1, "subtitle": "Jobs" }]
   },
   {
     "key": 6,
-    "name": "heart sergury",
+    "name": "Cholecystectomy",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "sergury",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Team" }
+    ],
+    "right": [
+      { "key": 1, "subtitle": "Services" },
+      { "key": 2, "subtitle": "Jobs" }
+    ]
   },
   {
     "key": 7,
-    "name": "heart sergury",
+    "name": "Free skin graft",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "sergury",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Offers" },
+      { "key": 3, "subtitle": "Team" }
+    ],
+    "right": [
+      { "key": 1, "subtitle": "Services" },
+      { "key": 2, "subtitle": "Jobs" }
+    ]
   },
   {
     "key": 8,
-    "name": "heart sergury",
+    "name": "Low back pain surgery",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "sergury",
+    "left": [
+      { "key": 1, "subtitle": "Qualities" },
+      { "key": 2, "subtitle": "Team" }
+    ],
+    "right": [{ "key": 1, "subtitle": "Services" }]
   },
   {
     "key": 9,
-    "name": "heart sergury",
+    "name": "Partial colectomy",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "sergury",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Offers" }
+    ],
+    "right": [
+      { "key": 1, "subtitle": "Services" },
+      { "key": 2, "subtitle": "Jobs" }
+    ]
   },
   {
     "key": 10,
-    "name": "heart sergury",
+    "name": "Prostatectomy",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "sergury",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Offers" },
+      { "key": 3, "subtitle": "Team" }
+    ],
+    "right": [{ "key": 1, "subtitle": "Services" }]
   },
   {
     "key": 11,
-    "name": "heart sergury",
+    "name": "Tonsillectomy",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "sergury",
+    "left": [{ "key": 1, "subtitle": "Donation" }],
+    "right": [
+      { "key": 1, "subtitle": "Services" },
+      { "key": 2, "subtitle": "Jobs" }
+    ]
   },
   {
     "key": 12,
-    "name": "heart sergury",
+    "name": "Whole Blood Donation",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "donation",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Team" }
+    ],
+    "right": [
+      { "key": 1, "subtitle": "Services" },
+      { "key": 2, "subtitle": "Jobs" }
+    ]
   },
   {
     "key": 13,
-    "name": "heart sergury",
+    "name": "Power Red Donation",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "donation",
+    "left": [
+      { "key": 1, "subtitle": "Donation" },
+      { "key": 2, "subtitle": "Offers" },
+      { "key": 3, "subtitle": "Team" }
+    ],
+    "right": [
+      { "key": 1, "subtitle": "Services" },
+      { "key": 2, "subtitle": "Jobs" }
+    ]
   },
   {
     "key": 14,
-    "name": "heart sergury",
+    "name": "Platelet Donation",
     "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
-  },
-  {
-    "key": 15,
-    "name": "heart sergury",
-    "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
-  },
-  {
-    "key": 16,
-    "name": "heart sergury",
-    "imgUrl": "https://thefinancialexpress.com.bd/uploads/1619621365.jpg",
-    "catagory": "therapy"
+    "catagory": "donation",
+    "left": [{ "key": 1, "subtitle": "Donation" }],
+    "right": [{ "key": 1, "subtitle": "Services" }]
   }
 ]

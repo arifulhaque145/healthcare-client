@@ -5,13 +5,10 @@ import useAuth from "../Hooks/useAuth";
 function AllServices() {
   const newData = useAuth().data;
 
-  {
-    /* {newData.map((item) => (
-        <Service key={item.key} data={item} />
-      ))} */
-  }
+  const therapy = newData.filter((item) => item.catagory === "therapy");
+  const sergury = newData.filter((item) => item.catagory === "sergury");
+  const donation = newData.filter((item) => item.catagory === "donation");
 
-  // page
   return (
     <div className="w-full lg:py-6 mt-6 lg:mt-0">
       <div>
@@ -23,10 +20,9 @@ function AllServices() {
           <span className="bg-black h-px flex-grow t-2 relative top-4 lg:top-5"></span>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 lg:mb-20 mb-10">
-          <AllServs />
-          <AllServs />
-          <AllServs />
-          <AllServs />
+          {therapy.map((item) => (
+            <AllServs key={item.key} data={item} />
+          ))}
         </div>
         <div className="flex justify-center w-50 mx-auto my-4">
           <span className="bg-black h-px flex-grow t-2 relative top-4 lg:top-5"></span>
@@ -36,10 +32,9 @@ function AllServices() {
           <span className="bg-black h-px flex-grow t-2 relative top-4 lg:top-5"></span>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 lg:mb-20 mb-10">
-          <AllServs />
-          <AllServs />
-          <AllServs />
-          <AllServs />
+          {sergury.map((item) => (
+            <AllServs key={item.key} data={item} />
+          ))}
         </div>
         <div className="flex justify-center w-50 mx-auto my-4">
           <span className="bg-black h-px flex-grow t-2 relative top-4 lg:top-5"></span>
@@ -49,10 +44,9 @@ function AllServices() {
           <span className="bg-black h-px flex-grow t-2 relative top-4 lg:top-5"></span>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 lg:mb-20 mb-10">
-          <AllServs />
-          <AllServs />
-          <AllServs />
-          <AllServs />
+          {donation.map((item) => (
+            <AllServs key={item.key} data={item} />
+          ))}
         </div>
       </div>
     </div>
