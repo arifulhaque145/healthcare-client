@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const BannerContainer = styled.div`
-  background-image: url("https://t3.ftcdn.net/jpg/02/07/09/06/360_F_207090644_pzixjQM0iSPLdTTAjDT0DX4nXVMz7Non.jpg");
+  background-image: url("https://images.squarespace-cdn.com/content/v1/57bf2267579fb34fc4a7cf04/1578612545780-QOJS0A1PVFJOK1XOKN4D/Medical+Banner.jpg?format=1500w");
   height: 32em;
   @media (max-width: 412px) {
     height: 20em;
@@ -11,7 +11,7 @@ const BannerContainer = styled.div`
 
 function Banner() {
   // compo
-  // const bannerImg = "https://t3.ftcdn.net/jpg/02/07/09/06/360_F_207090644_pzixjQM0iSPLdTTAjDT0DX4nXVMz7Non.jpg";
+  // const bannerImg = "https://images.squarespace-cdn.com/content/v1/57bf2267579fb34fc4a7cf04/1578612545780-QOJS0A1PVFJOK1XOKN4D/Medical+Banner.jpg?format=1500w";
   return (
     <BannerContainer className="flex flex-col justify-center items-start">
       <div className="flex flex-col lg:max-w-2xl sm:mx-auto sm:flex-row">
